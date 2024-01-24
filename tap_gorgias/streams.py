@@ -269,7 +269,7 @@ class TicketDetailsStream(GorgiasStream):
     """Uses tickets as a parent stream. This stream is used to get the details of a ticket which are not available
     in the List Ticket view, like spam or integration details."""
 
-    name = "ticket_details_tmp"
+    name = "ticket_details"
     parent_stream_type = TicketsStream
     path = "/api/tickets/{ticket_id}"
     primary_keys = ["id"]
